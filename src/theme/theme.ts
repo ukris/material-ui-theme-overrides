@@ -127,6 +127,7 @@ function createTheme(variant: ThemeZoom):any {
         }
     }}
   )
+  GlobalContext.theme = modTheme
   return modTheme
 }
 

@@ -1,0 +1,215 @@
+{
+  "config": {
+    "title": "React Typescript",
+    "description": "React and TypeScript example starter project",
+    "menu": [
+      "Getting Started",
+      "Components"
+    ],
+    "version": "1.0.0",
+    "repository": null,
+    "native": false,
+    "themeConfig": {},
+    "separator": "-",
+    "typescript": true,
+    "files": "**/*.{md,mdx}",
+    "theme": "src/theme/index",
+    "base": "src",
+    "port": 4000,
+    "ignore": [
+      "README.md"
+    ],
+    "codeSandbox": false
+  },
+  "entries": [
+    {
+      "key": "src/components/address/Address.md",
+      "value": {
+        "id": "f72952c551587bdd02b09bc1b2e0677f",
+        "filepath": "src/components/address/Address.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/address/Address.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-address-address",
+        "route": "/src-components-address-address",
+        "name": "Address",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/avatar/Avatar.md",
+      "value": {
+        "id": "d64522580e5550a39c2be3bae7482a8c",
+        "filepath": "src/components/avatar/Avatar.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/avatar/Avatar.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-avatar-avatar",
+        "route": "/src-components-avatar-avatar",
+        "name": "Avatar",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/avatar/Avatar.mdx",
+      "value": {
+        "name": "Ava",
+        "route": "/",
+        "id": "69a84814582e545f2ca4f92c16428a18",
+        "filepath": "src/components/avatar/Avatar.mdx",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/avatar/Avatar.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-avatar-avatar",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "ava",
+            "depth": 1,
+            "value": "Ava"
+          },
+          {
+            "slug": "avatar",
+            "depth": 3,
+            "value": "Avatar"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/avatar-group/AvatarGroup.md",
+      "value": {
+        "id": "e3a8f6849e449ca5575893b4dbcbc5bc",
+        "filepath": "src/components/avatar-group/AvatarGroup.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/avatar-group/AvatarGroup.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-avatar-group-avatar-group",
+        "route": "/src-components-avatar-group-avatar-group",
+        "name": "Avatar group",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/country/Country.md",
+      "value": {
+        "id": "0ce198a754be454f3317f8c0a2946ed6",
+        "filepath": "src/components/country/Country.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/country/Country.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-country-country",
+        "route": "/src-components-country-country",
+        "name": "Country",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/ellipsis/Ellipsis.md",
+      "value": {
+        "id": "1c745bbdd8e99f2bc7e439af413cae80",
+        "filepath": "src/components/ellipsis/Ellipsis.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/ellipsis/Ellipsis.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-ellipsis-ellipsis",
+        "route": "/src-components-ellipsis-ellipsis",
+        "name": "Ellipsis",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/people-dropdown-select/PeopleDropdownSelect.md",
+      "value": {
+        "id": "6531a82bb502d0e2ce4a0e21d69ad839",
+        "filepath": "src/components/people-dropdown-select/PeopleDropdownSelect.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/people-dropdown-select/PeopleDropdownSelect.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-people-dropdown-select-people-dropdown-select",
+        "route": "/src-components-people-dropdown-select-people-dropdown-select",
+        "name": "People dropdown select",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/progressbar/ProgressBar.md",
+      "value": {
+        "id": "dde2157b0bdcca3d22c2f4c65b5f9ba6",
+        "filepath": "src/components/progressbar/ProgressBar.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/progressbar/ProgressBar.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-progressbar-progress-bar",
+        "route": "/src-components-progressbar-progress-bar",
+        "name": "Progress bar",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/star-rating/StarRating.md",
+      "value": {
+        "id": "51425110fb9f2de699cca65003d69923",
+        "filepath": "src/components/star-rating/StarRating.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/star-rating/StarRating.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-star-rating-star-rating",
+        "route": "/src-components-star-rating-star-rating",
+        "name": "Star rating",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/tags/Tag.md",
+      "value": {
+        "id": "36372ef1b80c1a623f1d13ef7696bfed",
+        "filepath": "src/components/tags/Tag.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/tags/Tag.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-tags-tag",
+        "route": "/src-components-tags-tag",
+        "name": "Tag",
+        "menu": "",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/components/tags/Tags.md",
+      "value": {
+        "id": "8c6b28278a1ece1aed8b3638cab335cd",
+        "filepath": "src/components/tags/Tags.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/tags/Tags.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-tags-tags",
+        "route": "/src-components-tags-tags",
+        "name": "Tags",
+        "menu": "",
+        "headings": []
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "src/gatsby-theme-docz/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "gatsbythemedocz",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    }
+  ]
+}

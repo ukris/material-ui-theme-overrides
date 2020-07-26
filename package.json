@@ -9,29 +9,65 @@
   ],
   "main": "src/index.tsx",
   "dependencies": {
-    "@material-ui/core": "^5.0.0-alpha.2",
-    "@material-ui/icons": "^5.0.0-alpha.1",
-    "@material-ui/lab": "^5.0.0-alpha.2",
-    "react": "16.13.1",
+    "@material-ui/core": "^5.0.0-alpha.4",
+    "@material-ui/icons": "^5.0.0-alpha.4",
+    "@material-ui/lab": "^5.0.0-alpha.3",
+    "autosuggest-highlight": "^3.1.1",
+    "docz-core": "^2.3.2-alpha.0",
+    "paging-algorithm": "^1.0.1",
+    "react": "^16.13.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.1"
   },
   "devDependencies": {
-    "@types/material-ui": "0.21.7",
-    "@types/react": "16.9.34",
+    "@types/autosuggest-highlight": "^3.1.0",
+    "@types/material-ui": "^0.21.7",
+    "@types/react": "^16.9.43",
     "@types/react-dom": "16.9.6",
-    "typescript": "3.8.3"
+    "craco": "^0.0.3",
+    "craco-alias": "^2.1.1",
+    "cross-env": "^7.0.2",
+    "docz": "^2.3.2-alpha.0",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-module-resolver": "^1.0.3",
+    "node-sass": "4.13.1",
+    "prettier": "1.18.2",
+    "purgecss": "2.2.1",
+    "react-app-rewired": "2.1.5",
+    "react-styleguidist": "^11.0.8",
+    "tailwindcss": "1.4.6",
+    "tailwindcss-dir": "4.0.0",
+    "typeface-roboto": "0.0.75",
+    "typescript": "3.9.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "yarn run tailwind && yarn stubby & cross-env TSC_WATCHFILE=UseFsEventsWithFallbackDynamicPolling react-scripts start",
+    "docz": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve",
+    "build": "yarn run tailwind && yarn run purge-tailwind && cross-env GENERATE_SOURCEMAP=false react-scripts build  && yarn analyze",
+    "tailwind": "tailwind build ./src/styles/tailwind-config.css -c ./tailwind.config.js -o ./src/styles/tailwind.css",
+    "purge-tailwind": "node ./purge-tailwindcss.js",
+    "start:gmapson": "REACT_APP_NOMOCKS=true yarn start",
+    "docs": "npx styleguidist server",
+    "test": "react-scripts test --testPathIgnorePatterns=src/vendors/*",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "stubby": "stubby --watch --data ./src/mocks/stubby.json"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

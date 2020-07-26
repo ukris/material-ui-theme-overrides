@@ -1,0 +1,49 @@
+/*
+@tailwind base;
+
+@tailwind components;
+*/
+
+.rounded {
+  border-radius: 0.25rem
+}
+
+.border {
+  border-width: 1px
+}
+
+.flex {
+  display: flex
+}
+
+.inline-flex {
+  display: inline-flex
+}
+
+.table {
+  display: table
+}
+
+.hidden {
+  display: none
+}
+
+.pl-24 {
+  padding-left: 6rem
+}
+
+.pl-40 {
+  padding-left: 10rem
+}
+
+.pl-56 {
+  padding-left: 14rem
+}
+
+.relative {
+  position: relative
+}
+
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform
+}
