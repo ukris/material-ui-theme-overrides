@@ -1,22 +1,10 @@
 import { createMuiTheme, responsiveFontSizes} from '@material-ui/core'
 import PaletteOptions from '@material-ui/core/styles/createMuiTheme';
+import { GlobalContext } from 'context/global-context'
 import { FONT_BASIS, makePalette, ThemeZoom, unit, tablePadding } from './index'
+import { roundNum } from 'helpers'
 // https://www.sipios.com/blog-tech/how-to-use-styled-components-with-material-ui-in-a-react-app
 import typography from './typography'
-
-export function roundNum(num: number, decimal: number = 2) {
-  return Math.round(num * Math.pow(10, decimal))/ (Math.pow(10, decimal))
-}
-
-const GlobalContext:any = {
-  fontSize: {
-    xs: '0.5rem',
-    sm: '0.75rem',
-    md: '1rem',
-    lg: '1.25rem',
-    xl: '1.5rem'
-  }
-}
 
 function createTheme(variant: ThemeZoom):any {
   let palette:any = makePalette(variant)
@@ -27,6 +15,7 @@ function createTheme(variant: ThemeZoom):any {
   GlobalContext.palette.type = palette.type
   GlobalContext.palette.contrastText = palette.contrastText
   palette = {...palette, ...colors}
+  GlobalContext.setThemeZoom(variant)
   const theme = createMuiTheme({
     zoomFontSize: (factor:number):string => `${roundNum(0.30 * factor * zoom)}${unit}`,
     zoomSpacing: (factor: number) => spacing(roundNum(factor * zoom)),
@@ -127,7 +116,8 @@ function createTheme(variant: ThemeZoom):any {
         }
     }}
   )
-  GlobalContext.theme = modTheme
+  //  return responsiveFontSizes(modTheme)
+  GlobalContext.theme = theme
   return modTheme
 }
 
