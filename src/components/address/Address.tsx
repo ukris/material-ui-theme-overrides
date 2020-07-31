@@ -65,7 +65,7 @@ export interface EditorProps {
   updateCell: (placeId: string) => void
 
   /** ClickAwayListener prop */
-  setShowEditor: (content:any) => void
+  setShowEditor?: (content:any) => void
 }
 
 export default function Address({ placeName, editable = true, updateCell, setShowEditor } : EditorProps) {
@@ -158,7 +158,7 @@ export default function Address({ placeName, editable = true, updateCell, setSho
 
   return (
     <div className="table-address" data-test="table-address">
-      <ClickAwayListener onClickAway={()=> setShowEditor(null)}>
+      <ClickAwayListener onClickAway={()=> setShowEditor && setShowEditor(null)}>
           <Autocomplete
             id="table-address-autocomplete" // Required for snapshot testing
             open={true}

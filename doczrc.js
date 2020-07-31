@@ -1,8 +1,10 @@
 export default {
   typescript: true,
   files: '**/*.{md,mdx}',
-  menu: ['Getting Started', 'Components'],
-  theme: 'src/theme/index',
+  menu: [
+    'Getting Started',
+    { name: 'Components', menu: ['Avatar', 'AvatarGroup'] }
+  ],
   base: 'src',
   port: 4000,
   ignore: [

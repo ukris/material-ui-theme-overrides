@@ -188,10 +188,7 @@ const Avatar = function Avatar(props: AvatarProps) {
         children = getInitials(name,initials)
         // @ts-ignore
         style.backgroundColor = color
-          // @ts-ignore
-        if (!palette) {
-          debugger
-        }
+        // @ts-ignore
         style.color = palette.type === LIGHT ? WHITE : BLACK
       } else {
         children = name

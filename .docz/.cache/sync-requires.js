@@ -10,6 +10,7 @@ exports.components = {
   "component---src-components-avatar-avatar-md": hot(preferDefault(require("/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/avatar/Avatar.md"))),
   "component---src-components-avatar-avatar-mdx": hot(preferDefault(require("/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/avatar/Avatar.mdx"))),
   "component---src-components-avatar-group-avatar-group-md": hot(preferDefault(require("/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/avatar-group/AvatarGroup.md"))),
+  "component---src-components-avatar-group-avatar-group-mdx": hot(preferDefault(require("/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/avatar-group/AvatarGroup.mdx"))),
   "component---src-components-country-country-md": hot(preferDefault(require("/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/country/Country.md"))),
   "component---src-components-ellipsis-ellipsis-md": hot(preferDefault(require("/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/ellipsis/Ellipsis.md"))),
   "component---src-components-people-dropdown-select-people-dropdown-select-md": hot(preferDefault(require("/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/people-dropdown-select/PeopleDropdownSelect.md"))),

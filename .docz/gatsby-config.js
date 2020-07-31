@@ -39,7 +39,10 @@ const config = {
         themesDir: 'src',
         mdxExtensions: ['.md', '.mdx'],
         docgenConfig: {},
-        menu: ['Getting Started', 'Components'],
+        menu: [
+          'Getting Started',
+          { name: 'Components', menu: ['Avatar', 'AvatarGroup'] },
+        ],
         mdPlugins: [],
         hastPlugins: [],
         ignore: ['README.md'],
@@ -105,7 +108,6 @@ const config = {
           db:
             '/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/.docz/app/db.json',
         },
-        theme: 'src/theme/index',
         codeSandbox: false,
       },
     },

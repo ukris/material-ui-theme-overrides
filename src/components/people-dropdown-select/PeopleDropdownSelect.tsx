@@ -6,7 +6,8 @@ import Autocomplete from '@material-ui/lab/Autocomplete'
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank'
 import CheckBoxIcon from '@material-ui/icons/CheckBox'
 import AvatarGroup from '../avatar-group/AvatarGroup'
-import Avatar, { AvatarType} from 'components/avatar/Avatar'
+import Avatar from 'components/avatar/Avatar'
+import { IAvatar } from 'components/avatar/types'
 import { AvatarGroupProps } from 'components/avatar-group'
 import './style.scss'
 
@@ -15,11 +16,11 @@ const checkedIcon = <CheckBoxIcon fontSize="small" />
 
 interface PeopleDropdownSelectTypes {
     /** List of selectable people */
-    people: AvatarType[]
+    people: IAvatar[]
 
     /** AvatarGroup Component Data. "avatars" prop obj array gets rendered as the people selected by default ("preselected") */
     avatarGroupProps: AvatarGroupProps
-    setShowEditor: (content:any) => void
+    setShowEditor?: (content:any) => void
 }
 
 export default function PeopleDropdownSelect({ people, avatarGroupProps,  setShowEditor }: PeopleDropdownSelectTypes) {
@@ -34,7 +35,7 @@ export default function PeopleDropdownSelect({ people, avatarGroupProps,  setSho
   }
 
   return (
-    <ClickAwayListener onClickAway={()=> setShowEditor(null)}>
+    <ClickAwayListener onClickAway={()=> setShowEditor && setShowEditor(null)}>
       <div onClick={(ev) => ev.stopPropagation()} className="table-people" data-test="table-peopledropdownselect">
         <Autocomplete
             multiple

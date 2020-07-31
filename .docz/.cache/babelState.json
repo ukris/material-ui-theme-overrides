@@ -31,7 +31,8 @@
           "options": {
             "plugins": [],
             "isTSX": true,
-            "allExtensions": true
+            "allExtensions": true,
+            "jsxPragma": "jsx"
           }
         },
         {
@@ -79,7 +80,8 @@
           "options": {
             "plugins": [],
             "isTSX": true,
-            "allExtensions": true
+            "allExtensions": true,
+            "jsxPragma": "jsx"
           }
         },
         {
@@ -127,7 +129,8 @@
           "options": {
             "plugins": [],
             "isTSX": true,
-            "allExtensions": true
+            "allExtensions": true,
+            "jsxPragma": "jsx"
           }
         },
         {
@@ -175,7 +178,8 @@
           "options": {
             "plugins": [],
             "isTSX": true,
-            "allExtensions": true
+            "allExtensions": true,
+            "jsxPragma": "jsx"
           }
         },
         {

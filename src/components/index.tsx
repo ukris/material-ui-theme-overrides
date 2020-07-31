@@ -1,6 +1,0 @@
-export { default as InfoBox } from './info-box'
-export { default as PageTitle } from './page-title'
-export { default as Profile } from './profile'
-export { default as Widget } from './widgets'
-export { default as SimpleTable } from './simple-table'
-export { default as ThemeToggler } from './theme-toggler'

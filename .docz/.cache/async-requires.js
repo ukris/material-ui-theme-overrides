@@ -7,6 +7,7 @@ exports.components = {
   "component---src-components-avatar-avatar-md": () => import("./../../../src/components/avatar/Avatar.md" /* webpackChunkName: "component---src-components-avatar-avatar-md" */),
   "component---src-components-avatar-avatar-mdx": () => import("./../../../src/components/avatar/Avatar.mdx" /* webpackChunkName: "component---src-components-avatar-avatar-mdx" */),
   "component---src-components-avatar-group-avatar-group-md": () => import("./../../../src/components/avatar-group/AvatarGroup.md" /* webpackChunkName: "component---src-components-avatar-group-avatar-group-md" */),
+  "component---src-components-avatar-group-avatar-group-mdx": () => import("./../../../src/components/avatar-group/AvatarGroup.mdx" /* webpackChunkName: "component---src-components-avatar-group-avatar-group-mdx" */),
   "component---src-components-country-country-md": () => import("./../../../src/components/country/Country.md" /* webpackChunkName: "component---src-components-country-country-md" */),
   "component---src-components-ellipsis-ellipsis-md": () => import("./../../../src/components/ellipsis/Ellipsis.md" /* webpackChunkName: "component---src-components-ellipsis-ellipsis-md" */),
   "component---src-components-people-dropdown-select-people-dropdown-select-md": () => import("./../../../src/components/people-dropdown-select/PeopleDropdownSelect.md" /* webpackChunkName: "component---src-components-people-dropdown-select-people-dropdown-select-md" */),

@@ -3,3 +3,4 @@
 yarn-error.log
 /src/config/api-keys.ts
 /docz
+/.docz

@@ -9,6 +9,7 @@ const SETTINGS = 'settings'
 const CURRENT_BUFFER = 'buffer'
 const BUFFERS = 'buffers'
 class LocalStorageMock {
+    store:any={}
     constructor() {
       this.store = {};
     }
@@ -17,20 +18,21 @@ class LocalStorageMock {
       this.store = {};
     }
   
-    getItem(key) {
+    getItem(key:string) {
       return this.store[key] || null;
     }
   
-    setItem(key, value) {
+    setItem(key:string, value:string) {
       this.store[key] = value.toString();
     }
   
-    removeItem(key) {
+    removeItem(key:string) {
       delete this.store[key];
     }
   };
   if (!global.localStorage) {
-      global.localStorage = new LocalStorageMock();
+      // @ts-ignore
+      global.localStorage = new LocalStorageMock()
   }
 interface IGlobalContext {
     buffers: Buffer[]

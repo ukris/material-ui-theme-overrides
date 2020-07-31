@@ -4,7 +4,13 @@
     "description": "React and TypeScript example starter project",
     "menu": [
       "Getting Started",
-      "Components"
+      {
+        "name": "Components",
+        "menu": [
+          "Avatar",
+          "AvatarGroup"
+        ]
+      }
     ],
     "version": "1.0.0",
     "repository": null,
@@ -13,7 +19,6 @@
     "separator": "-",
     "typescript": true,
     "files": "**/*.{md,mdx}",
-    "theme": "src/theme/index",
     "base": "src",
     "port": 4000,
     "ignore": [
@@ -22,6 +27,33 @@
     "codeSandbox": false
   },
   "entries": [
+    {
+      "key": "src/index.mdx",
+      "value": {
+        "name": "Getting Started",
+        "route": "/",
+        "order": 1,
+        "id": "6576455a124f9aaefd860597f03a8fe4",
+        "filepath": "src/index.mdx",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/index.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "getting-started",
+            "depth": 1,
+            "value": "Getting Started"
+          },
+          {
+            "slug": "consistency",
+            "depth": 2,
+            "value": "Consistency"
+          }
+        ]
+      }
+    },
     {
       "key": "src/components/address/Address.md",
       "value": {
@@ -94,6 +126,32 @@
       }
     },
     {
+      "key": "src/components/avatar-group/AvatarGroup.mdx",
+      "value": {
+        "name": "AvatarGroup",
+        "route": "/avatar-group",
+        "id": "faedc4c3e316665f10edfc1189714baa",
+        "filepath": "src/components/avatar-group/AvatarGroup.mdx",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/avatar-group/AvatarGroup.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-avatar-group-avatar-group",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "avatargroup",
+            "depth": 1,
+            "value": "AvatarGroup"
+          },
+          {
+            "slug": "avatargroup-1",
+            "depth": 3,
+            "value": "AvatarGroup"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/components/country/Country.md",
       "value": {
         "id": "0ce198a754be454f3317f8c0a2946ed6",
@@ -119,21 +177,6 @@
         "slug": "src-components-ellipsis-ellipsis",
         "route": "/src-components-ellipsis-ellipsis",
         "name": "Ellipsis",
-        "menu": "",
-        "headings": []
-      }
-    },
-    {
-      "key": "src/components/people-dropdown-select/PeopleDropdownSelect.md",
-      "value": {
-        "id": "6531a82bb502d0e2ce4a0e21d69ad839",
-        "filepath": "src/components/people-dropdown-select/PeopleDropdownSelect.md",
-        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/people-dropdown-select/PeopleDropdownSelect.md",
-        "link": "",
-        "hidden": false,
-        "slug": "src-components-people-dropdown-select-people-dropdown-select",
-        "route": "/src-components-people-dropdown-select-people-dropdown-select",
-        "name": "People dropdown select",
         "menu": "",
         "headings": []
       }
@@ -197,9 +240,77 @@
         "menu": "",
         "headings": []
       }
+    },
+    {
+      "key": "src/components/people-dropdown-select/PeopleDropdownSelect.md",
+      "value": {
+        "id": "6531a82bb502d0e2ce4a0e21d69ad839",
+        "filepath": "src/components/people-dropdown-select/PeopleDropdownSelect.md",
+        "fullpath": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/people-dropdown-select/PeopleDropdownSelect.md",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-people-dropdown-select-people-dropdown-select",
+        "route": "/src-components-people-dropdown-select-people-dropdown-select",
+        "name": "People dropdown select",
+        "menu": "",
+        "headings": []
+      }
     }
   ],
   "props": [
+    {
+      "key": "src/App.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/Component.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "useStyle",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/index.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "InfoBox",
+          "methods": [],
+          "props": {}
+        },
+        {
+          "description": "",
+          "displayName": "components",
+          "methods": [],
+          "props": {}
+        },
+        {
+          "description": "",
+          "displayName": "Profile",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/context/index.tsx",
+      "value": []
+    },
     {
       "key": "src/gatsby-theme-docz/index.tsx",
       "value": [
@@ -208,6 +319,1244 @@
           "displayName": "gatsbythemedocz",
           "methods": [],
           "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/helpers/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "getWidth",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/settings/index.tsx",
+      "value": []
+    },
+    {
+      "key": "src/styleguide/ThemeWrapper.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ThemeWrapper",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/theme/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "theme",
+          "methods": [],
+          "props": {}
+        },
+        {
+          "description": "",
+          "displayName": "createTheme",
+          "methods": [],
+          "props": {
+            "theme": {
+              "defaultValue": null,
+              "description": "",
+              "name": "theme",
+              "required": true,
+              "type": {
+                "name": "\"basil\" | \"crane\" | \"material\" | \"materialDark\" | \"pinky\" | \"rally\" | \"reply\""
+              }
+            },
+            "zoom": {
+              "defaultValue": null,
+              "description": "",
+              "name": "zoom",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        },
+        {
+          "description": "",
+          "displayName": "makePalette",
+          "methods": [],
+          "props": {
+            "theme": {
+              "defaultValue": null,
+              "description": "",
+              "name": "theme",
+              "required": true,
+              "type": {
+                "name": "\"basil\" | \"crane\" | \"material\" | \"materialDark\" | \"pinky\" | \"rally\" | \"reply\""
+              }
+            },
+            "zoom": {
+              "defaultValue": null,
+              "description": "",
+              "name": "zoom",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/theme/theme-provider.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "themeprovider",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/address/Address.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Address",
+          "methods": [],
+          "props": {
+            "placeName": {
+              "defaultValue": null,
+              "description": "Google Maps Place Name",
+              "name": "placeName",
+              "parent": {
+                "fileName": "src/components/address/Address.tsx",
+                "name": "EditorProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "editable": {
+              "defaultValue": {
+                "value": true
+              },
+              "description": "Signals if Place can be changed or not",
+              "name": "editable",
+              "parent": {
+                "fileName": "src/components/address/Address.tsx",
+                "name": "EditorProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "updateCell": {
+              "defaultValue": null,
+              "description": "Updates row data in parent component with the purpose of persisting when switching table page",
+              "name": "updateCell",
+              "parent": {
+                "fileName": "src/components/address/Address.tsx",
+                "name": "EditorProps"
+              },
+              "required": true,
+              "type": {
+                "name": "(placeId: string) => void"
+              }
+            },
+            "setShowEditor": {
+              "defaultValue": null,
+              "description": "ClickAwayListener prop",
+              "name": "setShowEditor",
+              "parent": {
+                "fileName": "src/components/address/Address.tsx",
+                "name": "EditorProps"
+              },
+              "required": true,
+              "type": {
+                "name": "(content: any) => void"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/address/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "address",
+          "methods": [],
+          "props": {
+            "placeName": {
+              "defaultValue": null,
+              "description": "Google Maps Place Name",
+              "name": "placeName",
+              "parent": {
+                "fileName": "src/components/address/Address.tsx",
+                "name": "EditorProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "editable": {
+              "defaultValue": {
+                "value": true
+              },
+              "description": "Signals if Place can be changed or not",
+              "name": "editable",
+              "parent": {
+                "fileName": "src/components/address/Address.tsx",
+                "name": "EditorProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "updateCell": {
+              "defaultValue": null,
+              "description": "Updates row data in parent component with the purpose of persisting when switching table page",
+              "name": "updateCell",
+              "parent": {
+                "fileName": "src/components/address/Address.tsx",
+                "name": "EditorProps"
+              },
+              "required": true,
+              "type": {
+                "name": "(placeId: string) => void"
+              }
+            },
+            "setShowEditor": {
+              "defaultValue": null,
+              "description": "ClickAwayListener prop",
+              "name": "setShowEditor",
+              "parent": {
+                "fileName": "src/components/address/Address.tsx",
+                "name": "EditorProps"
+              },
+              "required": true,
+              "type": {
+                "name": "(content: any) => void"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/avatar/Avatar.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/avatar-group/AvatarGroup.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/avatar-pie/AvatarPie.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/country/Country.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/ellipsis/Ellipsis.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Ellipsis",
+          "methods": [],
+          "props": {
+            "text": {
+              "defaultValue": null,
+              "description": "Default string to be rendered",
+              "name": "text",
+              "parent": {
+                "fileName": "src/components/ellipsis/Ellipsis.tsx",
+                "name": "EllipsisProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "classes": {
+              "defaultValue": null,
+              "description": "",
+              "name": "classes",
+              "parent": {
+                "fileName": "src/components/ellipsis/Ellipsis.tsx",
+                "name": "EllipsisProps"
+              },
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "updateCell": {
+              "defaultValue": null,
+              "description": "Updates row data in parent component with the purpose of persisting when switching table page",
+              "name": "updateCell",
+              "parent": {
+                "fileName": "src/components/ellipsis/Ellipsis.tsx",
+                "name": "EllipsisProps"
+              },
+              "required": true,
+              "type": {
+                "name": "(text: string) => void"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/ellipsis/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ellipsis",
+          "methods": [],
+          "props": {
+            "text": {
+              "defaultValue": null,
+              "description": "Default string to be rendered",
+              "name": "text",
+              "parent": {
+                "fileName": "src/components/ellipsis/Ellipsis.tsx",
+                "name": "EllipsisProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "classes": {
+              "defaultValue": null,
+              "description": "",
+              "name": "classes",
+              "parent": {
+                "fileName": "src/components/ellipsis/Ellipsis.tsx",
+                "name": "EllipsisProps"
+              },
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "updateCell": {
+              "defaultValue": null,
+              "description": "Updates row data in parent component with the purpose of persisting when switching table page",
+              "name": "updateCell",
+              "parent": {
+                "fileName": "src/components/ellipsis/Ellipsis.tsx",
+                "name": "EllipsisProps"
+              },
+              "required": true,
+              "type": {
+                "name": "(text: string) => void"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/error/Error.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Error",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/error/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "error",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/info-box/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "infobox",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/input/BootstrapInput.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/input/index.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/loaders/Spinner.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/loaders/index.ts",
+      "value": []
+    },
+    {
+      "key": "src/components/page-title/PageTitle.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PageTitle",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/page-title/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "pagetitle",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/pagination/pagintation.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Pagination",
+          "methods": [],
+          "props": {
+            "total": {
+              "defaultValue": null,
+              "description": "",
+              "name": "total",
+              "parent": {
+                "fileName": "src/components/pagination/pagintation.tsx",
+                "name": "PaginationProps"
+              },
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "parent": {
+                "fileName": "src/components/pagination/pagintation.tsx",
+                "name": "PaginationProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "limit": {
+              "defaultValue": null,
+              "description": "",
+              "name": "limit",
+              "parent": {
+                "fileName": "src/components/pagination/pagintation.tsx",
+                "name": "PaginationProps"
+              },
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "pageCount": {
+              "defaultValue": null,
+              "description": "",
+              "name": "pageCount",
+              "parent": {
+                "fileName": "src/components/pagination/pagintation.tsx",
+                "name": "PaginationProps"
+              },
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "currentPage": {
+              "defaultValue": null,
+              "description": "",
+              "name": "currentPage",
+              "parent": {
+                "fileName": "src/components/pagination/pagintation.tsx",
+                "name": "PaginationProps"
+              },
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "pageValue": {
+              "defaultValue": null,
+              "description": "",
+              "name": "pageValue",
+              "parent": {
+                "fileName": "src/components/pagination/pagintation.tsx",
+                "name": "PaginationProps"
+              },
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "onPageChange": {
+              "defaultValue": null,
+              "description": "",
+              "name": "onPageChange",
+              "parent": {
+                "fileName": "src/components/pagination/pagintation.tsx",
+                "name": "PaginationProps"
+              },
+              "required": true,
+              "type": {
+                "name": "HandlePageChange"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/people-dropdown-select/PeopleDropdownSelect.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PeopleDropdownSelect",
+          "methods": [],
+          "props": {
+            "people": {
+              "defaultValue": null,
+              "description": "List of selectable people",
+              "name": "people",
+              "parent": {
+                "fileName": "src/components/people-dropdown-select/PeopleDropdownSelect.tsx",
+                "name": "PeopleDropdownSelectTypes"
+              },
+              "required": true,
+              "type": {
+                "name": "IAvatar[]"
+              }
+            },
+            "avatarGroupProps": {
+              "defaultValue": null,
+              "description": "AvatarGroup Component Data. \"avatars\" prop obj array gets rendered as the people selected by default (\"preselected\")",
+              "name": "avatarGroupProps",
+              "parent": {
+                "fileName": "src/components/people-dropdown-select/PeopleDropdownSelect.tsx",
+                "name": "PeopleDropdownSelectTypes"
+              },
+              "required": true,
+              "type": {
+                "name": "AvatarGroupProps"
+              }
+            },
+            "setShowEditor": {
+              "defaultValue": null,
+              "description": "",
+              "name": "setShowEditor",
+              "parent": {
+                "fileName": "src/components/people-dropdown-select/PeopleDropdownSelect.tsx",
+                "name": "PeopleDropdownSelectTypes"
+              },
+              "required": false,
+              "type": {
+                "name": "((content: any) => void) | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/people-dropdown-select/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "peopledropdownselect",
+          "methods": [],
+          "props": {
+            "people": {
+              "defaultValue": null,
+              "description": "List of selectable people",
+              "name": "people",
+              "parent": {
+                "fileName": "src/components/people-dropdown-select/PeopleDropdownSelect.tsx",
+                "name": "PeopleDropdownSelectTypes"
+              },
+              "required": true,
+              "type": {
+                "name": "IAvatar[]"
+              }
+            },
+            "avatarGroupProps": {
+              "defaultValue": null,
+              "description": "AvatarGroup Component Data. \"avatars\" prop obj array gets rendered as the people selected by default (\"preselected\")",
+              "name": "avatarGroupProps",
+              "parent": {
+                "fileName": "src/components/people-dropdown-select/PeopleDropdownSelect.tsx",
+                "name": "PeopleDropdownSelectTypes"
+              },
+              "required": true,
+              "type": {
+                "name": "AvatarGroupProps"
+              }
+            },
+            "setShowEditor": {
+              "defaultValue": null,
+              "description": "",
+              "name": "setShowEditor",
+              "parent": {
+                "fileName": "src/components/people-dropdown-select/PeopleDropdownSelect.tsx",
+                "name": "PeopleDropdownSelectTypes"
+              },
+              "required": false,
+              "type": {
+                "name": "((content: any) => void) | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/profile/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "profile",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/progressbar/ProgressBar.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ProgressBar",
+          "methods": [],
+          "props": {
+            "value": {
+              "defaultValue": null,
+              "description": "",
+              "name": "value",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/progressbar/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "progressbar",
+          "methods": [],
+          "props": {
+            "value": {
+              "defaultValue": null,
+              "description": "",
+              "name": "value",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/simple-table/index.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/star-rating/StarRating.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "StarRating",
+          "methods": [],
+          "props": {
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "value": {
+              "defaultValue": null,
+              "description": "",
+              "name": "value",
+              "required": true,
+              "type": {
+                "name": "0 | 1 | 2 | 3 | 4 | 5 | null"
+              }
+            },
+            "cellId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "cellId",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "updateCellVal": {
+              "defaultValue": null,
+              "description": "",
+              "name": "updateCellVal",
+              "required": false,
+              "type": {
+                "name": "((cellId: string, newVal: number | null) => void) | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/star-rating/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "starrating",
+          "methods": [],
+          "props": {
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "value": {
+              "defaultValue": null,
+              "description": "",
+              "name": "value",
+              "required": true,
+              "type": {
+                "name": "0 | 1 | 2 | 3 | 4 | 5 | null"
+              }
+            },
+            "cellId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "cellId",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "updateCellVal": {
+              "defaultValue": null,
+              "description": "",
+              "name": "updateCellVal",
+              "required": false,
+              "type": {
+                "name": "((cellId: string, newVal: number | null) => void) | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/tags/Tag.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Tag",
+          "methods": [],
+          "props": {
+            "bgColor": {
+              "defaultValue": {
+                "value": "grey.300"
+              },
+              "description": "",
+              "name": "bgColor",
+              "parent": {
+                "fileName": "src/components/tags/Tag.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "cls": {
+              "defaultValue": null,
+              "description": "",
+              "name": "cls",
+              "parent": {
+                "fileName": "src/components/tags/Tag.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "css": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "description": "",
+              "name": "css",
+              "parent": {
+                "fileName": "src/components/tags/Tag.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "object | undefined"
+              }
+            },
+            "onClick": {
+              "defaultValue": null,
+              "description": "",
+              "name": "onClick",
+              "parent": {
+                "fileName": "src/components/tags/Tag.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "((e: any) => void) | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/tags/Tags.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Tags",
+          "methods": [],
+          "props": {
+            "tags": {
+              "defaultValue": null,
+              "description": "",
+              "name": "tags",
+              "parent": {
+                "fileName": "src/components/tags/Tags.tsx",
+                "name": "TagProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string[]"
+              }
+            },
+            "cls": {
+              "defaultValue": null,
+              "description": "",
+              "name": "cls",
+              "parent": {
+                "fileName": "src/components/tags/Tags.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "css": {
+              "defaultValue": null,
+              "description": "",
+              "name": "css",
+              "parent": {
+                "fileName": "src/components/tags/Tags.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "object | undefined"
+              }
+            },
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "parent": {
+                "fileName": "src/components/tags/Tags.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"primary\" | \"info\" | \"accent\" | \"warning\" | \"danger\" | \"error\" | \"secondary\" | undefined"
+              }
+            },
+            "bgColor": {
+              "defaultValue": {
+                "value": "grey.300"
+              },
+              "description": "",
+              "name": "bgColor",
+              "parent": {
+                "fileName": "src/components/tags/Tags.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "tagCls": {
+              "defaultValue": null,
+              "description": "",
+              "name": "tagCls",
+              "parent": {
+                "fileName": "src/components/tags/Tags.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "tagCss": {
+              "defaultValue": null,
+              "description": "",
+              "name": "tagCss",
+              "parent": {
+                "fileName": "src/components/tags/Tags.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "object | undefined"
+              }
+            },
+            "onClick": {
+              "defaultValue": null,
+              "description": "",
+              "name": "onClick",
+              "parent": {
+                "fileName": "src/components/tags/Tags.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "((e: any) => void) | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/tags/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "tags",
+          "methods": [],
+          "props": {
+            "bgColor": {
+              "defaultValue": {
+                "value": "grey.300"
+              },
+              "description": "",
+              "name": "bgColor",
+              "parent": {
+                "fileName": "src/components/tags/Tag.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "cls": {
+              "defaultValue": null,
+              "description": "",
+              "name": "cls",
+              "parent": {
+                "fileName": "src/components/tags/Tag.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "css": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "description": "",
+              "name": "css",
+              "parent": {
+                "fileName": "src/components/tags/Tag.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "object | undefined"
+              }
+            },
+            "onClick": {
+              "defaultValue": null,
+              "description": "",
+              "name": "onClick",
+              "parent": {
+                "fileName": "src/components/tags/Tag.tsx",
+                "name": "TagProps"
+              },
+              "required": false,
+              "type": {
+                "name": "((e: any) => void) | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/theme-toggler/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "themetoggler",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/tooltip/TooltipList.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TooltipList",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "parent": {
+                "fileName": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/tooltip/TooltipList.tsx",
+                "name": "IProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "content": {
+              "defaultValue": null,
+              "description": "",
+              "name": "content",
+              "parent": {
+                "fileName": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/tooltip/TooltipList.tsx",
+                "name": "IProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string[]"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/widgets/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "widgets",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "parent": {
+                "fileName": "/Users/uma.krishnan/projects/uma/material-ui-theme-overrides/src/components/widgets/index.tsx",
+                "name": "WidgetProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/helpers/table/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "getLookupId",
+          "methods": [],
+          "props": {
+            "domainId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "domainId",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "projectId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "projectId",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "boardId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "boardId",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "laneId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "laneId",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        },
+        {
+          "description": "",
+          "displayName": "getIds",
+          "methods": [],
+          "props": {}
+        },
+        {
+          "description": "",
+          "displayName": "getRange",
+          "methods": [],
+          "props": {
+            "fromRowIdx": {
+              "defaultValue": null,
+              "description": "",
+              "name": "fromRowIdx",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "toRowIdx": {
+              "defaultValue": null,
+              "description": "",
+              "name": "toRowIdx",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "fromColIdx": {
+              "defaultValue": null,
+              "description": "",
+              "name": "fromColIdx",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "toColIdx": {
+              "defaultValue": null,
+              "description": "",
+              "name": "toColIdx",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            },
+            "laneId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "laneId",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "domainId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "domainId",
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "projectId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "projectId",
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "boardId": {
+              "defaultValue": null,
+              "description": "",
+              "name": "boardId",
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            }
+          }
         }
       ]
     }
