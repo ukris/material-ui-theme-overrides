@@ -3,32 +3,23 @@ import { makeStyles } from '@material-ui/core'
 export default makeStyles((theme: any) => ({
   root: {
     maxHeight: '35vh',
-    overflow: 'auto',
     marginBottom: theme.spacing(2),
   },
   drawer: {
     borderRight: 0,
     zIndex: 1200,
-    width: 271,
+    width: "17rem",
     top: theme.mixins.toolbar.minHeight,
     maxHeight: 'calc(100%)',
-    overflow: 'auto',
-    paddingBottom: 100,
+    paddingBottom: "6.25rem",
     backgroundColor: theme.palette.background.paper,
     paddingTop: theme.spacing(3),
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
-    '&::webkit-scrollbar': {
-      width: 50
-    },
-    '&::webkit-scrollbar-track': {
-      backgroundColor: '#000'
-    },
   },
   menuButton: {
-    position: 'absolute',
     top: 0,
-    right: 5,
+    right: '.3rem',
   },
   profile: {
     marginBottom: theme.spacing(5),

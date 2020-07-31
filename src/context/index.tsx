@@ -2,5 +2,5 @@ import CurrentBufferContext from './current-buffer-context'
 import TableContext from './table-context'
 import GlobalContext from './global-context'
 import ProjectContext from './project-context'
-
-export { CurrentBufferContext,  GlobalContext, ProjectContext, TableContext }
+import LayoutContext from './layout-context'
+export { CurrentBufferContext,  GlobalContext, LayoutContext, ProjectContext, TableContext }

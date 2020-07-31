@@ -12,6 +12,10 @@
   border-width: 1px
 }
 
+.cursor-pointer {
+  cursor: pointer
+}
+
 .inline {
   display: inline
 }
@@ -60,6 +64,22 @@
   list-style-type: none
 }
 
+.mr-2 {
+  margin-right: 0.5rem
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem
+}
+
+.mt-6 {
+  margin-top: 1.5rem
+}
+
+.overflow-auto {
+  overflow: auto
+}
+
 .pl-24 {
   padding-left: 6rem
 }
@@ -84,6 +104,10 @@
   position: relative
 }
 
+.resize {
+  resize: both
+}
+
 .text-black {
   --text-opacity: 1;
   color: #000;
@@ -94,6 +118,14 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap
+}
+
+.w-16 {
+  width: 4rem
+}
+
+.z-50 {
+  z-index: 50
 }
 
 .grid-flow-col {
@@ -111,6 +143,18 @@
   transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))
 }
 
+.transition-all {
+  transition-property: all
+}
+
 .transition {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform
+}
+
+.duration-300 {
+  transition-duration: 300ms
+}
+
+.delay-300 {
+  transition-delay: 300ms
 }

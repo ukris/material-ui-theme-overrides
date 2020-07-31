@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import clsx from 'clsx'
 import { useTheme } from '@material-ui/styles'
@@ -8,6 +8,7 @@ import MiniMenu from './sidebar/mini-width'
 import Footer from './footer'
 import Sidebar  from './sidebar'
 import TopBar  from './topbar'
+import layoutContext from "context/layout-context"
 
 interface DashboardProps {
   // @ts-ignore
@@ -16,28 +17,30 @@ interface DashboardProps {
 function Dashboard({ children }: DashboardProps) {
   const classes = useStyles()
   const theme = useTheme()
+  const { miniMenu, fullScreen, setMiniMenu, setFullScreen  } = useContext(layoutContext)
+  const [openSidebar, setOpenSidebar] = useState(true)
+  const cls = clsx({ [classes.contentShift]: fullScreen || miniMenu, [classes.content]: true })
+  
   debugger
   // @ts-ignore
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'), {
     defaultMatches: true,
   })
-  const [openSidebar, setOpenSidebar] = useState(true)
 
   const handleToggleSidebar = () => {
-    setOpenSidebar(!openSidebar)
+    setFullScreen(!fullScreen)
+    setMiniMenu(!miniMenu)
   }
-  const cls = clsx({ [classes.contentShift]: openSidebar, [classes.content]: true })
+  
   return (
     <div className={classes.root}>
-      <TopBar openSidebar={openSidebar} onToggleSidebar={handleToggleSidebar} />
+      <TopBar openSidebar={Boolean(fullScreen)} onToggleSidebar={handleToggleSidebar} />
       <Sidebar
         onClose={handleToggleSidebar}
-        open={openSidebar}
+        open={Boolean(fullScreen)}
         variant={isDesktop ? 'persistent' : 'temporary'}
       />
-      {
-        !openSidebar && <MiniMenu handleClick={handleToggleSidebar} />
-      }
+      { miniMenu && <MiniMenu handleClick={handleToggleSidebar} /> }
       <main className={cls}>
         {children}
         <Footer />

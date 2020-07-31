@@ -11,9 +11,9 @@ import {
   Hidden,
 } from '@material-ui/core'
 import CloseIcon from '@material-ui/icons/Close'
-import { pages } from './pages'
+import { pages } from '../pages'
 import { Profile, ProjectsNav } from 'components'
-import useStyles from './full-width-styles'
+import useStyles from './styles'
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 import { DARK } from 'theme'
 import { GlobalContext } from 'context'
@@ -24,7 +24,7 @@ function Sidebar(props: any) {
   const { palette } = GlobalContext;
   const { type } = palette;
   return (
-    <OverlayScrollbarsComponent className={`${classes.root} ${type === DARK ? 'os-theme-light' : 'os-theme-dark'}`}>
+    <OverlayScrollbarsComponent className={`${classes.root} overflow-auto ${type === DARK ? 'os-theme-light' : 'os-theme-dark'}`}>
       <Drawer
         anchor="left"
         classes={{ paper: classes.drawer }}
@@ -34,7 +34,7 @@ function Sidebar(props: any) {
       >
        {  <section>
           <Hidden mdUp>
-            <IconButton className={classes.menuButton} aria-label="Menu" onClick={onClose}>
+            <IconButton className={`${classes.menuButton} absolute`} aria-label="Menu" onClick={onClose}>
               <CloseIcon />
             </IconButton>
           </Hidden>

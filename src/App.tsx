@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import { Router } from 'react-router-dom'
+import debounce from 'lodash.debounce'
+
 import { ThemeContext, ThemeProvider, ThemeZoom, themePalette, LIGHTORDARK } from './theme'
-import { GlobalContext, ProjectContext, TableContext } from 'context'
+import { GlobalContext, LayoutContext, ProjectContext, TableContext } from 'context'
 import { Cell, Column } from 'apps/table/types'
 import history from './history'
 import Routes from './routes'
 import projectsSrc from 'mocks/projects.json'
 import 'overlayscrollbars/css/OverlayScrollbars.css'
+import  { RESIZE_DEBOUNCE_TIME } from 'settings'
 
 /*  domainId: number
     projectId: number
@@ -22,6 +25,27 @@ import 'overlayscrollbars/css/OverlayScrollbars.css'
     setRows: (rows:[]) => void
     setFilteredRows: (rows:[]) => void
     setColumn: (columns: Column[]) => void*/
+
+    function useWindowSize() {
+      const [size, setSize] = useState([window.innerWidth, window.innerHeight])  
+  
+      useLayoutEffect(() => {
+        const handleResize = () => 
+          setSize([window.innerWidth,
+                  window.innerHeight])
+        const debouncedHandleResize = debounce(handleResize, RESIZE_DEBOUNCE_TIME);
+        window.addEventListener('resize', debouncedHandleResize);
+        return () => {
+          window.removeEventListener('resize', debouncedHandleResize);
+        }
+      }, []);
+      
+      return {
+        width: size[0],
+        height: size[1]
+      }
+  }
+  
 function App() {
   const [themeZoom, setThemeZoom] = useState<ThemeZoom>(GlobalContext.themeZoom)
   const { theme } = themeZoom
@@ -30,9 +54,16 @@ function App() {
   const [focusedCell, setFocusedCell] = useState<Cell | undefined>(undefined)
   const [currentProject, setCurrentProject] = useState<any>({})
   const [projects, setProjects] = useState(projectsSrc.projects || [])
+  const [fullScreen, setFullScreen] = useState(true)
+  const [miniMenu, setMiniMenu] = useState(false)
+  const [collapsed, setCollapsed] = useState(false)
+  const size = useWindowSize()
+  const [width, setWidth] = useState(size.width)
+  const [height, setHeight] = useState(size.height)
 
   return (
     <ThemeContext.Provider value={{ themeZoom, setThemeZoom, type, setType }}>
+      <LayoutContext.Provider  value={{fullScreen, setFullScreen, miniMenu, setMiniMenu, collapsed, setCollapsed, width, setWidth, height, setHeight}}>
       <ProjectContext.Provider
         value={{
           currentProject,
@@ -55,6 +86,7 @@ function App() {
           </ThemeProvider>
         </TableContext.Provider>
       </ProjectContext.Provider>
+      </LayoutContext.Provider>
     </ThemeContext.Provider>
 
   )
