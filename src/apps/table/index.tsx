@@ -1,10 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
-import MUITable from 'vendors/mui-table/Table'
-import TableBody from 'vendors/mui-table/TableBody'
-import TableCell from 'vendors/mui-table/TableCell'
-import TableContainer from 'vendors/mui-table/TableContainer'
+import {Table , TableBody, TableCell, TableContainer, TableRow} from '@material-ui/core'
 import Pagination from '@material-ui/lab/Pagination'
-import TableRow from 'vendors/mui-table/TableRow'
 import Paper from '@material-ui/core/Paper'
 import Checkbox from '@material-ui/core/Checkbox'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
@@ -25,7 +21,7 @@ import { FONT_BASIS } from 'theme'
 import { TableContext, GlobalContext } from 'context'
 import useStyles from './styles'
 
-function Table(props: TableType) {
+function EnTable(props: TableType) {
   const { rowsData, defaultOrderBy = 'name', desc = false, editable=false } = props
 
   const {
@@ -122,7 +118,7 @@ function Table(props: TableType) {
           editable={editable}
         />
         <TableContainer>
-          <MUITable
+          <Table
             className={classes.table}
             aria-labelledby="tableTitle"
             size={dense ? 'small' : 'medium'}
@@ -155,13 +151,13 @@ function Table(props: TableType) {
                       selected={isItemSelected}
                       id={rowId}
                     >
-                      <TableCell style={{width:'5px'}} padding="none"  dataCol="drag"
-                        dataRow={`${index}|${row.id}`}>
+                      <TableCell style={{width:'5px'}} padding="none" 
+                        id={`${index}|${row.id}`}>
                         <DragIndicator />
                       </TableCell>
                       <TableCell 
-                        padding="none" dataCol="checkbox"
-                        dataRow={`${index}|${row.id}`}>
+                        padding="none"
+                        id={`${index}|${row.id}`}>
                         <Checkbox
                           color="primary"
                           checked={isItemSelected}
@@ -187,12 +183,11 @@ function Table(props: TableType) {
                 <TableRow style={{ height: (dense ? 12 * FONT_BASIS : 15 * FONT_BASIS) * emptyRows }}>
                   <TableCell 
                     colSpan={6}
-                    dataRow="empty"
-                    dataCol="empty"/>
+                    />
                 </TableRow>
               )}
             </TableBody>
-          </MUITable>
+          </Table>
         </TableContainer>
         <Pagination 
           page={page + 1} 
@@ -209,4 +204,4 @@ function Table(props: TableType) {
   )
 }
 
-export default React.memo(Table)
+export default React.memo(EnTable)

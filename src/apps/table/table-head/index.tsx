@@ -1,15 +1,12 @@
 import React from 'react'
 import Checkbox from '@material-ui/core/Checkbox'
 import DragIndicator from '@material-ui/icons/DragIndicator'
-import MUITableHead from 'vendors/mui-table/TableHead'
-import TableRow from 'vendors/mui-table/TableRow'
-import TableCell from 'vendors/mui-table/TableCell'
-import TableSortLabel from 'vendors/mui-table/TableSortLabel'
+import { TableCell, TableHead, TableRow, TableSortLabel } from '@material-ui/core'
 import { getWidth } from 'helpers'
 import { TableHeadTypes } from '../types'
 import useStyles from './styles'
 
-export default function TableHead(props: TableHeadTypes) {
+export default function EnTableHead(props: TableHeadTypes) {
   const { onSelectAll, desc, orderBy, numSelected, rowCount, onSort, columns } = props
   const order = desc ? 'desc' : 'asc'
   const classes = useStyles(props)
@@ -18,17 +15,18 @@ export default function TableHead(props: TableHeadTypes) {
     onSort(event, property)
 
   return (
-    <MUITableHead>
+    <TableHead>
       <TableRow>
-      <TableCell padding="none" dataCol=""
-            dataRow="header">  
+      <TableCell padding="none"
+            id="header">  
         </TableCell>
-        <TableCell style={{width:'5px'}} padding="none"  dataCol="drag"
-            dataRow="drag">
+        <TableCell 
+            style={{width:'5px'}} 
+            padding="none"
+            id="drag">
             <DragIndicator />
         </TableCell>
-        <TableCell padding="none" dataCol="checkbox"
-            dataRow="header" >
+        <TableCell padding="none" id="checkbox">
           <Checkbox
             color="primary"
             indeterminate={numSelected > 0 && numSelected < rowCount}
@@ -51,8 +49,7 @@ export default function TableHead(props: TableHeadTypes) {
               style={{minWidth: getWidth(width), 
               'paddingRight': '1rem'}}
               sortDirection={orderBy === id ? order : false}
-              dataCol={`${idx}`}
-              dataRow="header"
+              id={`${idx}`}
             >
               <TableSortLabel
                 active={orderBy === id}
@@ -70,6 +67,6 @@ export default function TableHead(props: TableHeadTypes) {
           )
         })}
       </TableRow>
-    </MUITableHead>
+    </TableHead>
   )
 }

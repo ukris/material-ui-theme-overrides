@@ -2,7 +2,7 @@ import React, { useContext, useState, Suspense }from 'react'
 import clsx from 'clsx'
 import { format } from 'date-fns'
 
-import TableCell from 'vendors/mui-table/TableCell'
+import TableCell from '@material-ui/core/TableCell'
 import Star from '@material-ui/icons/Star'
 import Circle from '@material-ui/icons/FiberManualRecord'
 import MoodIcon from '@material-ui/icons/Mood'
@@ -173,7 +173,7 @@ function  RenderCell(props:  RenderCellType) {
     const canEditThisCell = editable && !col.readOnly
    
     const { colIndex, rowIndex, rowId, value } = cell
-    const id = `td-${rowIndex}-${colIndex}`
+    const id = `td-${rowId}-${rowIndex}-${colIndex}`
     const { align, disablePadding, renderer, width } = col
     const component = 'td'
     const scope = colIndex === 0 ? 'row' : undefined
@@ -217,8 +217,6 @@ function  RenderCell(props:  RenderCellType) {
             child = newChild
         }
     }
-    const dataCol = `${colIndex}`
-    const dataRow = `${rowIndex}|${rowId}`
     const cWidth = getWidth(col.width)
     return (
         <TableCell
@@ -228,8 +226,6 @@ function  RenderCell(props:  RenderCellType) {
             component={component} 
             scope={scope}
             padding={disablePadding ? 'none' : 'default'}
-            dataCol={dataCol}
-            dataRow={dataRow}
             onClick={(ev:any) => handleClick && handleClick(ev)}
             style={{minWidth: cWidth, maxWidth: cWidth, marginRight: `${tablePadding[0]}rem`}}
         >
