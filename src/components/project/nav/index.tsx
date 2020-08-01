@@ -20,7 +20,8 @@ const ProjectsNav = (props: any) => {
     const classes = useStyles()
     const { projects, setCurrentProject, currentProject } = React.useContext(ProjectContext)
     const [showProjects, setShowProjects] = React.useState<boolean>(true)
-    const [expanded, setExpanded] = React.useState<string[]>([])
+    const projectsIdByDef = projects?.map((project:any) => project.id) as string[]
+    const [expanded, setExpanded] = React.useState<string[]>(projectsIdByDef)
     const [selected, setSelected] = React.useState<string[]>([])
     const { palette } = GlobalContext
     const { type } = palette
@@ -83,7 +84,7 @@ const ProjectsNav = (props: any) => {
             findExpandedNodes()
         }
     }, [currentProject])
-
+    
     const ProjectNode = (project: any) => {
         const members: number = getMembers(project)
 
