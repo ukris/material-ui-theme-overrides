@@ -79,7 +79,6 @@ const ProjectsNav = (props: any) => {
     }
 
     React.useEffect(() => {
-        debugger
         if (!expanded.length && currentProject.id) {
             findExpandedNodes()
         }

@@ -18,9 +18,9 @@ interface DateRangePickerProps {
 }
 
 const onChange = (date:any) => {
-    debugger
     // updateCell
 }
+
 export default ({dates, format, updateCell} : DateRangePickerProps) => {
     const {start, end} = dates;
     return (

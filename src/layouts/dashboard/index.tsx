@@ -8,7 +8,7 @@ import MiniMenu from './sidebar/mini-width'
 import Footer from './footer'
 import Sidebar  from './sidebar'
 import TopBar  from './topbar'
-import layoutContext from "context/layout-context"
+import layoutConxt from "context/layout-context"
 
 interface DashboardProps {
   // @ts-ignore
@@ -17,7 +17,7 @@ interface DashboardProps {
 function Dashboard({ children }: DashboardProps) {
   const classes = useStyles()
   const theme = useTheme()
-  const { miniMenu, fullScreen, setMiniMenu, setFullScreen  } = useContext(layoutContext)
+  const { miniMenu, fullScreen, setMiniMenu, setFullScreen  } = useContext(layoutConxt)
   const [openSidebar, setOpenSidebar] = useState(true)
   const cls = clsx({ [classes.contentShift]: fullScreen || miniMenu, [classes.content]: true })
   

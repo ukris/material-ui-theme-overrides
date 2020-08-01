@@ -20,8 +20,8 @@ function Topbar(props: any) {
   return (
     <AppBar className={clsx(classes.root, className)}>
       <Toolbar className={classes.toolbar}>
-        <div className={`${classes.brandWrapper} ${miniMenu ? classes.width75 : ''}`}>
-          <div className={`${classes.logo} transition-all duration-300 delay-300  ${miniMenu ? 'hidden' : ''}`} >Entable</div>
+        <div className={`${classes.brandWrapper} transition-all duration-300 `} style={{ width: miniMenu ? '4.6rem' : '17rem' }}>
+          <div className={`${classes.logo} transition-all duration-300  ${miniMenu ? 'hidden' : ''}`} >Entable</div>
           <IconButton
             className={classes.menuButton}
             aria-label="Menu"

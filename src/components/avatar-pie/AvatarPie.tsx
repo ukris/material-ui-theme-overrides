@@ -15,7 +15,6 @@ function getSize(siz: Size, half?: boolean) {
         idx = 2
     }
     const spacing = zoomSpacing(idx+2)
-    //debugger
     return half ?  roundNum(Number(spacing.split('rem')[0])/2)+'rem' : spacing
 }
 
@@ -94,7 +93,6 @@ function AvatarPie(props: IProps) {
     const { fontSize } = GlobalContext.theme
     const avatarGrid = groupGrid[avatars.length - 1]
     const columnWidth = len > 1? getSize(size,true) : getSize(size)
-    debugger
     const columnHeight = len > 2? getSize(size,true) : getSize(size)
     const outlineCls = outline ? classes.border: ''
     const borderAndMargin = getBorderAndMargin(size)
